@@ -5,18 +5,15 @@ public class EvaluateNumber {
 	
 	public void answer(){
 	MathEngine run = new MathEngine();
+	HappySadCheck runCheck = new HappySadCheck();
+	Integer number1 = 1;
 
-	while(true){
-		while(stop < 10000)
-		{stop +=1;
+	while(number1 < 53){
+		
+			run.math1(number1);
 
-//			run.newNum();
-			run.math2();
-		}
-		break;
+			number1 += 1;
+	}
 	}		
-		
-		
-		}
-
 }
+
