@@ -30,21 +30,20 @@ public class MathEngine {
 	{numbers.clear();
 		number2 = number1;
 		while(stop == 1){
+			number3 = number2;
 		if(numbers.contains(1)){
 			System.out.println(number1 + " is a happy number.");
 			number1 += 1;
 			numbers.clear();
 			break;}
 		else if (numbers.contains(number3)){
-			System.out.println(number1);
+//			System.out.println(number1);
 			number1 += 1;
-			System.out.println("taco shells");
 			numbers.clear();
 			break;
 		}
 		else{
 			numbers.add(number3);
-			number3 = number2;
 		thousandsDigit = (number2 % 10000 - number2 % 1000)/1000;
 		hundredsDigit = (number2 % 1000 - number2 % 100)/100;
 		tensDigit= (number2 % 100 - number2 % 10)/10;
@@ -58,8 +57,8 @@ public class MathEngine {
 		total = onesSquare + tensSquare + hundredsSquare + thousandsSquare;;
 		number2 = total;
 		}		
-		System.out.println(total);
-		System.out.println(numbers);
+//		System.out.println(total);
+//		System.out.println(numbers);
 		}
 	}
 }

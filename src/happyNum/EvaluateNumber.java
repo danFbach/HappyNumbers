@@ -8,7 +8,7 @@ public class EvaluateNumber {
 	HappySadCheck runCheck = new HappySadCheck();
 	Integer number1 = 1;
 
-	while(number1 < 53){
+	while(number1 < 10000){
 		
 			run.math1(number1);
 
